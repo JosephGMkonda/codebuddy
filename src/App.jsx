@@ -3,6 +3,7 @@ import './App.css'
 import TopBar from './components/nav/TopBar'
 import Home from './components/home/Home'
 import Skills from './components/skills/Skills'
+import WorkExperience  from './components/workexperience/WorkExperience'
 
 function App() {
   
@@ -14,6 +15,7 @@ function App() {
     <div className="container-bar">
     <Home/>
     <Skills/>
+    <WorkExperience/>
   
 
     </div>

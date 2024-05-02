@@ -59,3 +59,44 @@ export const SKILLSData = [
     }
 
 ]
+
+
+
+export const WORK_EXPERIENCE =[
+    {
+        title: "Information Systems Analyst at NRB (1 year)",
+        date: "May 2023 - May 2024",
+        responsibilities: [
+            
+            "Address network issues to improve communication between computers and servers effectively.",
+            "Analyze existing systems and processes to identify areas for improvement and innovation.",
+            "Conduct testing and validation activities to ensure system functionality and user satisfaction.",
+            "Provide training and support to end-users, empowering them to leverage system capabilities effectively."
+        ]
+    },
+    {
+        title: "Freelancer programmer (2years)",
+        date: "2022 - current",
+        responsibilities: [
+            "Understand client business needs and technical requirements.",
+            "Develop tailored solutions using Python, Java, JavaScript.",
+            "Utilize frameworks like Django, Flask, React, Angular.",
+            "Design and develop responsive websites and web apps.",
+            "Integrate front-end interfaces with back-end systems via RESTful APIs.",
+            "Create native and cross-platform apps for iOS and Android.",
+            "Design and implement SQL and NoSQL databases."
+        ]
+    },
+    {
+        title: "Internship at Dream Code Malawi",
+        date: "2022 (3 months)",
+        responsibilities: [
+            "Developed and maintained backend services for a variety of web applications using Python, Django, and PostgreSQL.",
+            "Developed backend services for Systems  using Spring Boot.",
+            "Optimized backend systems for scalability and performance, implementing caching mechanisms and load balancing techniques to handle increasing user traffic.",
+            "Collaborated with frontend developers to integrate backend services with user interfaces, ensuring seamless functionality and performance",
+            
+        ]
+    }
+
+]
