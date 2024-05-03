@@ -4,6 +4,7 @@ import ContactInfoCard from '../contactinfocard/ContactInfoCard'
 import Email from '../../assets/emailicon.png'
 import Phone from '../../assets/phoneicon.png'
 import GitHub from '../../assets/githubicon.png'
+import ContactForm from './contactform/ContactForm'
 
 function ContactMe(){
     return(
@@ -32,7 +33,9 @@ function ContactMe(){
                 />
 
             </div>
-            <div style={{flex: 1}}></div>
+            <div style={{flex: 1}}>
+                <ContactForm/>
+            </div>
 
         </div>
          
