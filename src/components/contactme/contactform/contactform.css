@@ -42,4 +42,25 @@ form button:hover{
     background: transparent;
 }
 
+@media(max-width: 450px){
+    .name-container{
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    form input,
+    form textarea{
+        padding: 0.7rem;
+        border-radius: 0.3rem;
+
+    }
+
+    form button{
+        font-size: 0.9rem;
+        padding: 0.7rem;
+        border-radius: 0.3rem;
+        
+    }
+}
 

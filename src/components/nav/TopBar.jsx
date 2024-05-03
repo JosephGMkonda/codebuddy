@@ -35,9 +35,9 @@ function TopBar() {
                 <li>
                     <a className="menu-item">Work Experience</a>
                 </li>
-                <li>
+                {/* <li>
                     <a className="menu-item">Projects</a>
-                </li>
+                </li> */}
                 <li>
                     <a className="menu-item">Contact Me</a>
                 </li>
