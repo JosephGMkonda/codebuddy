@@ -5,25 +5,30 @@ import Home from './components/home/Home'
 import Skills from './components/skills/Skills'
 import WorkExperience  from './components/workexperience/WorkExperience'
 import ContactMe from './components/contactme/ContactMe'
+import { BrowserRouter as Router, Routes,Route, Link } from 'react-router-dom';
+
 
 function App() {
   
 
   return (
-    <>
-
-    <TopBar/>
-    <div className="container-bar">
-    <Home/>
-    <Skills/>
-    <WorkExperience/>
-    <ContactMe/>
+    
+    <Router>
+      <div>
+        <TopBar />
+        <div className="container-bar">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/work-experience" element={<WorkExperience />} />
+            <Route path="/contact-me" element={<ContactMe />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
   
-
-    </div>
   
     
-    </>
   )
 }
 

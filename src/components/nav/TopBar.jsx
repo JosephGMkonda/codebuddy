@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import './nav.css'
 import MobileView from './MobileView'
@@ -26,24 +27,20 @@ function TopBar() {
             </div>
 
             <ul>
-                <li>
-                    <a className="menu-item">Home</a>
-                </li>
-                <li>
-                    <a className="menu-item">Skills</a>
-                </li>
-                <li>
-                    <a className="menu-item">Work Experience</a>
-                </li>
-                {/* <li>
-                    <a className="menu-item">Projects</a>
-                </li> */}
-                <li>
-                    <a className="menu-item">Contact Me</a>
-                </li>
-
-                <button className="contact-me" onClick={() =>{}}>Hire Me</button>
-            </ul>
+  <li>
+    <Link to="/" className="menu-item">Home</Link>
+  </li>
+  <li>
+    <Link to="/skills" className="menu-item">Skills</Link>
+  </li>
+  <li>
+    <Link to="/work-experience" className="menu-item">Work Experience</Link>
+  </li>
+  <li>
+    <Link to="/contact-me" className="menu-item">Contact Me</Link>
+  </li>
+  <button className="contact-me" onClick={() => {}}>Hire Me</button>
+</ul>
 
             <button className="menu-btn" onClick = {toggleMenu}>
               <span 
