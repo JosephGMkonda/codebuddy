@@ -35,7 +35,7 @@ function WorkExperience(){
         sliderRef.current.slickPrev();
     }
     return(
-        <section className="work-experience-container">
+        <section id="work-experience"  className="work-experience-container">
             <h5>Work Experience</h5>
             <div className="experience-content">
 

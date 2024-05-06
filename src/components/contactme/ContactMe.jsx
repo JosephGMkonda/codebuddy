@@ -8,7 +8,7 @@ import ContactForm from './contactform/ContactForm'
 
 function ContactMe(){
     return(
-       <section className="contact-container">
+       <section id="contact-me" className="contact-container">
         <h5>Contact Me</h5>
 
         <div className="contact-content">

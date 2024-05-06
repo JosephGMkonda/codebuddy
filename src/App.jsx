@@ -13,19 +13,19 @@ function App() {
 
   return (
     
-    <Router>
-      <div>
+  
+      <>
         <TopBar />
         <div className="container-bar">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/work-experience" element={<WorkExperience />} />
-            <Route path="/contact-me" element={<ContactMe />} />
-          </Routes>
+          
+            <Home />
+            <Skills />
+            <WorkExperience />
+            <ContactMe />
+        
         </div>
-      </div>
-    </Router>
+      </>
+    
   
   
     

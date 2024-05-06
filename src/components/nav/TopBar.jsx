@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 import './nav.css'
 import MobileView from './MobileView'
@@ -13,53 +13,87 @@ function TopBar() {
         setOpenMenu(!openMenu);
     };
 
+
+
     return ( 
 
-        <>
-        <MobileView isOpen={openMenu} toggleMenu={toggleMenu}/>
     
+    
+        <>
+      <MobileView isOpen={openMenu} toggleMenu={toggleMenu} />
 
-    <nav className="nav-wrapper">
+      <nav className="nav-wrapper">
         <div className="container">
-            <div className="Logo" style={{ fontSize: '1.7em', fontStyle: 'italic' }}>
-                Joseph Mkonda
+          <div className="Logo" style={{ fontSize: '1.7em', fontStyle: 'italic' }}>
+            Joseph Mkonda
+          </div>
 
-            </div>
-
-            <ul>
-  <li>
-    <Link to="/" className="menu-item">Home</Link>
-  </li>
-  <li>
-    <Link to="/skills" className="menu-item">Skills</Link>
-  </li>
-  <li>
-    <Link to="/work-experience" className="menu-item">Work Experience</Link>
-  </li>
-  <li>
-    <Link to="/contact-me" className="menu-item">Contact Me</Link>
-  </li>
-  <button className="contact-me" onClick={() => {}}>Hire Me</button>
-</ul>
-
-            <button className="menu-btn" onClick = {toggleMenu}>
-              <span 
-              class={"material-symbols-outlined"}
-              style={{ fontSize: "1.8rem"}}
+          <ul>
+            <li>
+              <Link className="menu-item" 
+              activeClass="active" 
+              to="home" 
+              spy={true} 
+              smooth={true} 
+              offset={-100} 
+              duration={500} 
               >
-                
-             {openMenu ? "close" : "menu"}
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link className="menu-item"
+              to="skills" 
+              spy={true} 
+              smooth={true} 
+              offset={-100} 
+              duration={500}  
+              >
+                Skills
+              </Link>
+            </li>
+            <li>
+              <Link className="menu-item"
+              to="work-experience" 
+              spy={true} 
+              smooth={true} 
+              offset={-100} 
+              duration={500}  
 
-              </span>
+              >
+                Work Experience
+              </Link>
+            </li>
+            <li>
+              <Link className="menu-item" 
+               to="contact-me" 
+               spy={true} 
+               smooth={true} 
+               offset={-100} 
+               duration={500}  
+              
+              >
+                Contact Me
+              </Link>
+            </li>
+            <Link className="contact-me" to="contact-me" 
+               spy={true} 
+               smooth={true} 
+               offset={-100} 
+               duration={500} >
+              Hire Me
+            </Link>
+          </ul>
 
-
-            </button>
-
+          <button className="menu-btn" onClick={toggleMenu}>
+            <span class={'material-symbols-outlined'} style={{ fontSize: '1.8rem' }}>
+              {openMenu ? 'close' : 'menu'}
+            </span>
+          </button>
         </div>
-
-    </nav>
-
+      </nav>
     </>
+
 
     );
 

@@ -11,7 +11,7 @@ import springboot from '../../assets/springboot.png';
 
 function Home() {
     return(
-      <section className='home-container'>
+      <section id="home" className='home-container'>
         <div className='home-content'>
             <h2>Welcome to My Coding Playground: Where Imagination Meets Innovation!</h2>
             <p>Passionate about problem-solving and clean code, 
