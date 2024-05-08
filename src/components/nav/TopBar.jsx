@@ -66,6 +66,18 @@ function TopBar() {
             </li>
             <li>
               <Link className="menu-item" 
+               to="projects" 
+               spy={true} 
+               smooth={true} 
+               offset={-100} 
+               duration={500}  
+              
+              >
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link className="menu-item" 
                to="contact-me" 
                spy={true} 
                smooth={true} 
@@ -76,6 +88,7 @@ function TopBar() {
                 Contact Me
               </Link>
             </li>
+            
             <Link className="contact-me" to="contact-me" 
                spy={true} 
                smooth={true} 

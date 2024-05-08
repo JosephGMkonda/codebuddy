@@ -5,7 +5,7 @@ import Home from './components/home/Home'
 import Skills from './components/skills/Skills'
 import WorkExperience  from './components/workexperience/WorkExperience'
 import ContactMe from './components/contactme/ContactMe'
-import { BrowserRouter as Router, Routes,Route, Link } from 'react-router-dom';
+import Projects from './components/projects/Projects'
 
 
 function App() {
@@ -21,6 +21,7 @@ function App() {
             <Home />
             <Skills />
             <WorkExperience />
+            <Projects/>
             <ContactMe />
         
         </div>
