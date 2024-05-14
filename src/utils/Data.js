@@ -119,28 +119,33 @@ export const PortfolioData = [
     {
         title: "NasFam WebApp",
         image: NasFam,
-        desc: "Nasfam is a web app designed for streamlined rice production management. It simplifies tasks such as seed selection and harvest tracking, aiming to boost crop yield and sustainability."
+        desc: "Nasfam is a web app designed for streamlined rice production management. It simplifies tasks such as seed selection and harvest tracking, aiming to boost crop yield and sustainability.",
+        githubLink: "https://github.com/JosephGMkonda/Nasfam"
     },
     {
         title: "MalHood TV",
         image: MalHood,
-        desc: "The website exclusively showcases Malawian movies, offering a diverse collection of films that highlight the culture, talent, and stories of Malawi."
+        desc: "The website exclusively showcases Malawian movies, offering a diverse collection of films that highlight the culture, talent, and stories of Malawi.",
+        githubLink: "https://github.com/JosephGMkonda/MalHood-TV"
     },
     {
         title: "Medical Service App",
         image: TheMedicalApp,
-        desc: "The Medical Service App is a pocket healthcare companion. Book appointments, access medical records, and consult with professionals—all in one place. Convenient, efficient, and aimed at improving  health journey."
+        desc: "The Medical Service App is a pocket healthcare companion. Book appointments, access medical records, and consult with professionals—all in one place. Convenient, efficient, and aimed at improving  health journey.",
+        githubLink: "https://github.com/JosephGMkonda/MedicalServiceApp"
     },
     {
         title: "Viral View App",
         image: AdvApp,
-        desc: " Meet our Social Marketing Mobile App:one-stop-shop for effortless advertising. Create, manage, and track campaigns with ease. Elevate your online presence and engage your audience like never before."
+        desc: " Meet our Social Marketing Mobile App:one-stop-shop for effortless advertising. Create, manage, and track campaigns with ease. Elevate your online presence and engage your audience like never before.",
+        githubLink: "https://github.com/JosephGMkonda/viralviewFrontend"
     },
     
     {
         title: "Invoice WebApp",
-        image: BlissNova,
-        desc: "Streamline your invoicing process with our intuitive Invoice App."
+        image: InvoiceApp,
+        desc: "Streamline your invoicing process with our intuitive Invoice App.",
+        githubLink: "https://github.com/JosephGMkonda/invoice-Genarator"
     }
 
 ]

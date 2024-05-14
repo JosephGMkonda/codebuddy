@@ -70,7 +70,11 @@
     height: auto; 
 
 }
+.InvoiceApp{
+    max-width: 40%;
+    height: auto; 
 
+}
 .Expense-image{
     width: auto;
     height: 3rem;
@@ -78,6 +82,7 @@
     
 
 }
+
 
 .experience-arrow-right,
 .experience-arrow-left {
