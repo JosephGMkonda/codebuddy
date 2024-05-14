@@ -3,26 +3,19 @@ import './Project.css';
 import { PortfolioData } from '../../utils/Data';
 import Slider from "react-slick";
 
+
 function Projects() {
     const slideRef = useRef();
 
-    const set = {
-        dots: false,
+    var settings = {
+        dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 2,
-        slidesToScroll: 1, // Typo: It should be "slidesToScroll"
-        arrows: false,
-        responsive: [
-            {
-                breakpoint: 769,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-            }
-        ]
-    };
+        slidesToScroll: 2,
+      };
+        
+       
 
     const slideRight = () => {
         slideRef.current.slickNext();
@@ -67,15 +60,9 @@ function Projects() {
         <section id="projects">
             <h5 className="Myworks">My Works</h5>
             
-            <div className="experience-arrow-right" onClick={slideRight}>
-                <span className="material-symbols-outlined">chevron_right</span>
-            </div>
-            
-            <div className="experience-arrow-left" onClick={slideLeft}>
-                <span className="material-symbols-outlined">chevron_left</span>
-            </div>
+           
 
-            <Slider ref={slideRef} {...set}>
+            <Slider {...settings}>
                 {PortfolioData.map((project, index) => (
                     <Project key={index} project={project} />
                 ))}
