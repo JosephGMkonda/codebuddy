@@ -1,93 +1,112 @@
-.containerPortfolio{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.filter-button{
-    margin: 2rem;
-    text-align: center;
-}
-.filter-button .btn{
-    background: none;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    font-size: .85rem;
-    font-weight: 600;
-    letter-spacing: .4px;
-    margin-left: 1.3rem;
-    color: white;
-}
-.filter-button .btn:hover{
-    color: blueviolet;
-}
-.portfolio-gallery{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 2rem;
-}
-
-.port-box{
-    border-radius: 15px;
-    overflow: hidden;
-    background: #292e33;
-    display: flex;
-    grid-template-rows: 1fr auto;
-    align-items: center;
-    border: 2px solid white;
-    box-shadow: whitesmoke;
+.project-card{
+    background: #130f2a;
+    border-radius: 0.5rem;
+    border: 1px solid #6751b9;
+    padding: 1rem;
+    margin: 0.5rem;
+    
     position: relative;
-
 }
-.port-image{
+
+.container{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
     width: 100%;
+    height: 100%;
 }
-
-.port-image img{
-    width: 100%;
-    opacity: .5s;
+.wrapper{
+    
     height: 100%;
-    transition: .5s;
-}
-
-
-.port-content{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.2) #12f7ff);
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    transition: 0.5s;
-    padding: 0 2rem;
+    gap: 50px;
 }
 
-.port-box:hover .port-content{
-    opacity: 1;
-}
-
-.port-content h3{
+.Myworks{
     font-size: 1.5rem;
     font-weight: 600;
+    margin-bottom: 3rem;
+
 
 }
 
-.port-content p{
+
+.container img{
+    flex: 1;
+    height: 30%;
+    object-fit: cover;
+}
+
+.project-text{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 50%;
+    
+
+}
+.project-text p{
     font-size: .8rem;
-    margin: 5px 0 15px 0;
+    font-weight: 400;
+}
+
+
+.nasfam-image{
+    max-width: 40%;
+    height: auto; 
+}
+.malhood-image{
+    max-width: 40%;
+    height: auto; 
+
+}
+
+.ViralView-image{
+    max-width: 40%;
+    height: auto; 
+
+}
+
+.Expense-image{
+    width: auto;
+    height: 3rem;
+    max-width: 40%;
+    
+
+}
+
+.experience-arrow-right,
+.experience-arrow-left {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.experience-arrow-right {
+    left: 10px; /* Adjust as needed */
+}
+
+.experience-arrow-left {
+    right: 10px; /* Adjust as needed */
+}
+
+.material-symbols-outlined {
+    font-size: 24px; /* Adjust as needed */
 }
 
 
 
+
+.experience-arrow-right span,
+.experience-arrow-left span{
+    font-size: 2rem;
+    font-weight: 500;
+
+
+}
 

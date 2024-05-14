@@ -24,6 +24,7 @@
     background: #130f2a;
     position: absolute;
     top: 55%;
+    transform: translateY(-50%);
     z-index: 2;
     cursor: pointer;
 
@@ -38,12 +39,12 @@
 }
 
 .arrow-left{
-    left: -2rem;
+    left: -1rem;
 
 }
 
 .arrow-right{
-    right: -2rem;
+    right: -1rem;
 }
 
 @media(max-width: 1025px){

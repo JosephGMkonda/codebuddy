@@ -25,14 +25,16 @@ function ContactMe(){
 
                 />
 
-                
+<a href="https://github.com/JosephGMkonda" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}>
                 <ContactInfoCard
                 iconUrl = {GitHub}
                  text = "https://github.com/JosephGMkonda"
 
                 />
+                </a>
 
             </div>
+            
             <div style={{flex: 1}}>
                 <ContactForm/>
             </div>
